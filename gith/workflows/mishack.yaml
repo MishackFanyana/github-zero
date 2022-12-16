@@ -1,1 +1,18 @@
 
+name: github-zero
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: 
+
+    - name: Cache Primes
+      id: cache-primes
+      uses: actions/cache@v3
+      with:
+        path: prime-numbers
+        key: ${{ runner.os }}-primes
